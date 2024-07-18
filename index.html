@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实时时间与倒计时</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+      <div class="header">FEPT组织自由创作</div>
+      <div class="box">
+        <div class="time" id="currentTime"></div>
+        <div class="countdown" id="countdown"></div>
+        <div class="settings">
+        <div class="time-display">
+            <span id="current-time"></span>
+        </div>
+        <div class="countdown-container">
+            <div class="countdown-input">
+                <label for="days">天:</label>
+                <input type="number" id="days" value="0" min="0">
+                <label for="hours">小时:</label>
+                <input type="number" id="hours" value="0" min="0" max="23">
+                <label for="minutes">分钟:</label>
+                <input type="number" id="minutes" value="0" min="0" max="59">
+                <label for="seconds">秒:</label>
+                <input type="number" id="seconds" value="0" min="0" max="59">
+                <label for="milliseconds">毫秒:</label>
+                <input type="number" id="milliseconds" value="0" min="0" max="999">
+            </div>
+            <button id="start-countdown">开始倒计时</button>
+            <div class="countdown-display">
+                <span id="countdown-time">00:00:00:000</span>
+            </div>
+        </div>
+        <div class="theme-switch">
+            <label class="switch">
+                <input type="checkbox" id="theme-toggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <audio id="audio" src="http://m701.music.126.net/20240718230216/6399d99c56fd433bd5d91ac6f52cdac2/jdymusic/obj/wo3DlMOGwrbDjj7DisKw/34455606061/8069/b32a/96cd/72cf4573fbf6a69cb45981e60d07f2f8.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
